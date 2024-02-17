@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 100%;
+    width: 0;
+  max-width: 80%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.in-preview{
+  display: flex;
+  color:white;
+  justify-content: space-between;
+  background: #777777;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.output{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  margin: 4px;
+}
+.preview {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+.preview a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 40px;
+}
+
+
+
+.navbar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+.navbar .closebtn {
+  position:absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.header {
+  padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-button {
+cursor: pointer;
+font-size: 25px;
+}
+
+h1{
+margin: 0;
+flex-grow: 1; /* Pushes the heading to the center */
+text-align: center;
+}
+.video{
+width: 100%;
+height: 400px;
+}
+
+.video-container{
+position:relative;
+padding-top:56.25%;
+
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+.pre-heading{
+  max-width: 90%;
+  margin:20px auto;
+}
+
+#editor{
+  margin-left: 5px;
+  height: 400px;
+  width: 100%;
+  flex-grow:1;
+}
+
+
+.container-editor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin :0 10px
+}
+
+.buttons{
+  margin-bottom: -15px;
+
+}
+
+.buttons button{
+  margin: 0 5px;
+  padding:7px 15px;
+}
+
+.run-button{
+  background-color: green;
+  color: white;
+}
+
+footer{
+  margin: 20px;
+
+}
+footer a{
+  color: rgb(89, 0, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
